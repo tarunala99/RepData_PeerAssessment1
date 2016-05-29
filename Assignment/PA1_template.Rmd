@@ -9,8 +9,8 @@ setwd("~/Desktop/workinprogress")
 mydata<-read.csv("activity.csv",header=TRUE,sep=",")
 truedata<-split(mydata$steps,mydata$date)
 histdata<-lapply(truedata,sum,na.rm=TRUE)
-mean1<-lapply(truedata,mean,na.rm=TRUE)
-histdata1<-lapply(truedata,median,na.rm=TRUE)
+mean1<-lapply(truedata,sum,na.rm=TRUE)
+histdata1<-lapply(truedata,sum,na.rm=TRUE)
 con<-as.matrix(histdata)
 con1<-as.numeric(con,na.rm=TRUE)
 ```
@@ -21,8 +21,13 @@ hist(con1,xlab="Number of steps per day",main="Fitness tracker activity")
 
 ```{r}
 ## "The mean and median"
-print(mean1)
-print(histdata1)
+count10=0
+sum=0
+for(u in mean1)
+{sum=sum+u
+count10=count10+1}
+print(sum/count10)
+print(median(sort(as.numeric(histdata1))))
 ```
 Time series plot of the average number of steps
 ```{r}
