@@ -1,5 +1,4 @@
 ---
-<<<<<<< HEAD
 output: html_document
 ---
 Reproducible Research
@@ -128,29 +127,3 @@ plot(names(a100),c100[,1],type="l",xlab="time of day",ylab="number of steps",mai
 
 
 
-=======
-title: "Reproducible Research: Peer Assessment 1"
-output: 
-  html_document:
-    keep_md: true
----
-
-
-## Loading and preprocessing the data
-
-
-
-## What is mean total number of steps taken per day?
-
-
-
-## What is the average daily activity pattern?
-
-
-
-## Imputing missing values
-
-
-
-## Are there differences in activity patterns between weekdays and weekends?
->>>>>>> b97f61e7dedfbd549e479bd33741b7a78199340c

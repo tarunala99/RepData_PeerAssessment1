@@ -1,11 +1,11 @@
 ---
-<<<<<<< HEAD
 output: html_document
 ---
 Reproducible Research
 ========================
 Loading and preprocessing the data
-```{r}
+
+```r
 setwd("~/Desktop/workinprogress")
 mydata<-read.csv("activity.csv",header=TRUE,sep=",")
 truedata<-split(mydata$steps,mydata$date)
@@ -16,11 +16,15 @@ con<-as.matrix(histdata)
 con1<-as.numeric(con,na.rm=TRUE)
 ```
 Histogram of the total number of steps taken each day 
-```{r}
+
+```r
 hist(con1,xlab="Number of steps per day",main="Fitness tracker activity")
 ```
 
-```{r}
+![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2-1.png)
+
+
+```r
 ## "The mean and median"
 count10=0
 sum=0
@@ -28,21 +32,37 @@ for(u in mean1)
 {sum=sum+u
 count10=count10+1}
 print(sum/count10)
+```
+
+```
+## [1] 9354.23
+```
+
+```r
 print(median(sort(as.numeric(histdata1))))
 ```
+
+```
+## [1] 10395
+```
 Time series plot of the average number of steps
-```{r}
+
+```r
 a<-split(mydata$steps,mydata$interval)
 b<-lapply(a,mean,na.rm=TRUE)
 c<-as.matrix(b,na.rm=TRUE)
 d<-as.numeric(c,na.rm=TRUE)
 ```
 The plot
-```{r fig.width=6,fig.height=6}
+
+```r
 plot(names(a),c[,1],type="l",xlab="The intervals",ylab="Mean steps",main="Fitness tracker activity")
 ```
 
-```{r}
+![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-5-1.png)
+
+
+```r
 ## "The maximum number of steps in the interval"
 min<-0
 for (r in names(a))
@@ -56,13 +76,27 @@ for (r in names(a))
 }
 ```
 The values and the interval
-```{r}
+
+```r
 print(min)
+```
+
+```
+##      835 
+## 206.1698
+```
+
+```r
 print(max)
+```
+
+```
+## [1] "835"
 ```
 Imputing the missing data
 This is done by subsituting the NA values with the mean value at the interval and 0's when the mean doesn't exist
-```{r}
+
+```r
 count=1
 histdata<-lapply(truedata,mean,na.rm=TRUE)
 con<-as.matrix(histdata)
@@ -92,16 +126,25 @@ con<-as.matrix(histdata)
 con1<-as.numeric(con,na.rm=TRUE)
 ```
 Missing Values
-```{r}
+
+```r
 def<-mydata$steps
 print(length(def[is.na(def)]))
 ```
+
+```
+## [1] 0
+```
 The histogram after the imputing of the data
-```{r fig.width=6,fig.height=6}
+
+```r
 hist(con1,xlab="Number of steps per day",main="Fitness tracker activity")
 ```
 
-```{r}
+![plot of chunk unnamed-chunk-10](figure/unnamed-chunk-10-1.png)
+
+
+```r
 ## "Plotting data for weekdays and weekends"
 t<-as.Date(mydata$date,"%Y-%m-%d")
 s<-weekdays(t)
@@ -120,37 +163,14 @@ c<-as.matrix(b,na.rm=TRUE)
 d<-as.numeric(c,na.rm=TRUE)
 ```
 The plot
-```{r}
+
+```r
 par(mfcol=c(1,2))
 plot(names(a),c[,1],type="l",xlab="time of day",ylab="number of steps",main="Weekday")
 plot(names(a100),c100[,1],type="l",xlab="time of day",ylab="number of steps",main="Weekend")
 ```
 
-
-
-=======
-title: "Reproducible Research: Peer Assessment 1"
-output: 
-  html_document:
-    keep_md: true
----
-
-
-## Loading and preprocessing the data
+![plot of chunk unnamed-chunk-12](figure/unnamed-chunk-12-1.png)
 
 
 
-## What is mean total number of steps taken per day?
-
-
-
-## What is the average daily activity pattern?
-
-
-
-## Imputing missing values
-
-
-
-## Are there differences in activity patterns between weekdays and weekends?
->>>>>>> b97f61e7dedfbd549e479bd33741b7a78199340c
