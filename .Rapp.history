@@ -1,0 +1,277 @@
+rug(ppm)
+hist(ppm,col="green")
+abline(h=12,lwd=2)
+abline(v=12,lwd=2)
+abline(v=12,col="magenta",lwd=4)
+abline(v=median(ppm),col="magenta",lwd=4)
+as
+names(pollution)
+as
+reg <- table(pollution$region)
+reg
+sd
+barplot(reg, col = "wheat", main = "Number of Counties in Each Region")
+sad
+as
+boxplot(pm25 ~ region, data = pollution, col = "red")
+par(mfrow=c(2,1),mar=c(4,4,2,1))
+cx
+sd
+east <- subset(pollution,region=="east")
+head(east)
+sa
+as
+hist(east$pm25, col = "green")
+kj
+km
+kmj
+hist(west$pm25, col = "green")
+hist(subset(pollution,region=="west")$pm25, col = "green")
+sd
+with(pollution, plot(latitude, pm25))
+sd
+abline(h = 12, lwd = 2, lty = 2)
+sd
+plot(pollution$latitude, ppm, col = pollution$region)
+abline(h = 12, lwd = 2, lty = 2)
+abline(h = 12, lwd = 2, lty = 2)
+par(mfrow = c(1, 2), mar = c(5, 4, 2, 1))
+as
+west <- subset(pollution,region=="west")
+ds
+sd
+plot(west$latitude, west$pm25, main = "West")
+s
+sd
+plot(east$latitude, east$pm25, main = "East")
+quartz()
+as
+info()
+as
+?
+Devices
+plot(dataset,quartz)
+plot(dataset,quartz)
+plot(dataset,quartz)
+plot(dataset,quartz)
+sa
+asa
+with(faithful,plot(erutpions,waiting))
+with(faithful,plot(eruptions,waiting))
+with(faithful,plot(eruptions,waiting),main="Old Faithful Geyser data")
+title(main = "Old Faithful Geyser data")
+dev.cur()
+pdf(file="myplot.pdf")
+pdf(file="myplot.pdf")
+with(faithful, plot(eruptions, waiting))
+title(main = "Old Faithful Geyser data")
+dev.cur()
+dev.off()
+dev.cur()
+with(faithful, plot(eruptions,#
+| waiting))
+with(faithful, plot(eruptions,waiting))
+title(main = "Old Faithful Geyser data")
+xc
+xc
+dev.copy()
+dev.copy(png, file = "geyserplot.png")
+dev.off()
+mydata = read.table("household_power_consumption.txt")
+getwd()
+getwd()
+mydata = read.table("household_power_consumption.txt")
+head(mydata)
+mydata = read.table("household_power_consumption.txt",header=TRUE,sep=";")
+head(mydata)
+dim(mydata)
+mydata$Date[1]
+mydata$Date[0]
+mydata$Date
+mydata$Date=="1/1/2007"
+len(mydata$Date=="1/1/2007")
+dim(mydata$Date=="1/1/2007")
+levels(mydata$Date=="1/1/2007")
+head(mydata)
+𝚊𝚜.𝙳𝚊𝚝𝚎(mydata$Date)
+as.Date()
+as.Date(mydata$Date)
+head(mydata)
+head(mydata)
+Date="16/12/2006"
+as.Date(Date)
+y<-as.Date(Date)
+y+1
+y<-as.Date(Date,"%d/%m/%y")
+y
+y<-as.Date(Date,"%d/%m/%y")+1
+y
+y<-as.Date(Date,"%d/%m/%Y")+1
+y
+months(y)
+days(y)
+weekdays(y)
+summary(y)
+mon(y)
+names(y)
+range(mydata$Date)
+summary(mydata$Date)
+years(y)
+year(y)
+help date
+head(mydata)
+17:24:00
+time<-"17:24:00"
+strptime(time)
+strptime(time,format="%H:%M:%S")
+strptime(date,time,format="%H:%M:%S")
+date
+Date
+time
+strptime((date,time),format="%H:%M:%S")
+strptime((date,time),format="%d/%m/%Y%H:%M:%S")
+t<-paste(Date,time)
+t
+strptime((Date,time),format="%d/%m/%Y%H:%M:%S")
+strptime(t,format="%d/%m/%Y%H:%M:%S")
+r<-strptime(t,format="%d/%m/%Y%H:%M:%S")
+months(r)
+weekdays(r)
+seconds(r)
+year(r)
+names(r)
+attributes()r
+attributes(r)
+r$sec
+r$min
+r$hour
+r$year
+r$mon
+r
+r$yday
+r$wday
+months(r)
+head(r)
+head(mydata)
+clear
+clc
+clc
+rm
+Date="16/12/2006"
+Time="17:24:00 "
+Time="17:24:00"
+paste(Date,time)
+strptime(t,format="%d/%m/%Y %H:%M:%S")
+r<-strptime(t,format="%d/%m/%Y %H:%M:%S")
+r$year
+r<-strptime(t,format="%d/%m/%y %H:%M:%S")
+r$year
+r<-strptime(t,format="%d/%m/%Y %H:%M:%S")
+r
+r$year
+r$month
+attributes(r)
+r$mday
+r$mon
+r$year
+Date="14/1/2016"
+t<-paste(Date,time)
+t
+r<-strptime(t,format="%d/%m/%Y %H:%M:%S")
+r
+r$year
+r$mon
+names(mydata)
+head(mydata)
+w<-"2007-02-01 00:00:00"#
+e<-"2007-02-03 00:00:00"#
+w1<-strptime((Date,time),format="%Y-%m-%d %H:%M:%S")#
+e1<-strptime((Date,time),format="%Y-%m-%d %H:%M:%S")
+w<-"2007-02-01 00:00:00"#
+e<-"2007-02-03 00:00:00"#
+w1<-strptime(w,format="%Y-%m-%d %H:%M:%S")#
+e1<-strptime(e,format="%Y-%m-%d %H:%M:%S")
+e1
+w1
+e1>w1
+> w<-"2007-02-02 23:59:00"
+w<-"2007-02-02 23:59:00"
+w3<-strptime(w,format="%Y-%m-%d %H:%M:%S")
+w3
+w1
+e1
+w3>w1
+w3>e1
+w3<e1
+t<-paste(mydata$Date,mydata$Time)#
+r<-strptime((Date,time),format="%d/%m/%Y%H:%M:%S")#
+w<-"2007-02-01 00:00:00"#
+e<-"2007-02-03 00:00:00"#
+w1<-strptime(w,format="%Y-%m-%d %H:%M:%S")#
+e1<-strptime(e,format="%Y-%m-%d %H:%M:%S")#
+r>w1 & r<e1
+t<-paste(mydata$Date,mydata$Time)#
+r<-strptime(t,format="%d/%m/%Y%H:%M:%S")#
+w<-"2007-02-01 00:00:00"#
+e<-"2007-02-03 00:00:00"#
+w1<-strptime(w,format="%Y-%m-%d %H:%M:%S")#
+e1<-strptime(e,format="%Y-%m-%d %H:%M:%S")#
+r>w1 & r<e1
+w<-(r>w1 & r<e1)#
+truedata<-mydata[w]
+t<-paste(mydata$Date,mydata$Time)#
+r<-strptime(t,format="%d/%m/%Y%H:%M:%S")#
+w<-"2007-02-01 00:00:00"#
+e<-"2007-02-03 00:00:00"#
+w1<-strptime(w,format="%Y-%m-%d %H:%M:%S")#
+e1<-strptime(e,format="%Y-%m-%d %H:%M:%S")#
+w<-r>w1 & r<e1#
+truedata<-mydata[w]
+dim(w)
+dim(w)
+truedata
+w
+mydata[w]
+mydata[mydata$w]
+dim(w)
+mydata[w==TRUE]
+mydata[w=="TRUE"]
+w=="TRUE"
+table(w)["TRUE"]
+table(w)["FALSE"]
+w[w=="TRUE"]
+z[w=="TRUE"]
+mydata[w=="TRUE"]
+z[w=="NA"]
+table(w)["NA"]
+table(w)["true"]
+table(w)["TRUE"]
+truedata<-mydata[r>w1 & r<e1]
+truedata<-mydata[(r>w1 & r<e1)=="TRUE"]
+truedata<-mydata((r>w1 & r<e1)=="TRUE")
+truedata<-mydata[1]
+truedata
+truedata<-mydata[1][(r>w1 & r<e1)=="TRUE"]
+head(mydata)
+dim(mydata)
+truedata<-mydata[1:9]
+head(truedata)
+truedata<-mydata[1:9][w]
+truedata<-mydata[1:9][w=="TRUE"]
+W
+w
+w[w=="TRUE"]
+w[w=="TRUE",is.na=FALSE]
+dim(w)
+dim(mydata)
+mydata$Date[w=="TRUE"]
+mydata[1:9][w=="TRUE"]
+mydata[1:9]
+e=is.na(w)
+e
+w[w=="TRUE"]
+r<-w[w=="TRUE"]
+r
+is.na(r)
+R[is.na(r)=="FALSE"]
+r[is.na(r)=="FALSE"]
