@@ -1,6 +1,3 @@
----
-output: html_document
----
 Reproducible Research
 ========================
 Loading and preprocessing the data
@@ -171,6 +168,3 @@ plot(names(a100),c100[,1],type="l",xlab="time of day",ylab="number of steps",mai
 ```
 
 ![plot of chunk unnamed-chunk-12](figure/unnamed-chunk-12-1.png)
-
-
-

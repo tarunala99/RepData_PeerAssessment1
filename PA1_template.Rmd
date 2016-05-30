@@ -1,7 +1,3 @@
----
-<<<<<<< HEAD
-output: html_document
----
 Reproducible Research
 ========================
 Loading and preprocessing the data
@@ -125,32 +121,3 @@ par(mfcol=c(1,2))
 plot(names(a),c[,1],type="l",xlab="time of day",ylab="number of steps",main="Weekday")
 plot(names(a100),c100[,1],type="l",xlab="time of day",ylab="number of steps",main="Weekend")
 ```
-
-
-
-=======
-title: "Reproducible Research: Peer Assessment 1"
-output: 
-  html_document:
-    keep_md: true
----
-
-
-## Loading and preprocessing the data
-
-
-
-## What is mean total number of steps taken per day?
-
-
-
-## What is the average daily activity pattern?
-
-
-
-## Imputing missing values
-
-
-
-## Are there differences in activity patterns between weekdays and weekends?
->>>>>>> b97f61e7dedfbd549e479bd33741b7a78199340c
